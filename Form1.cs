@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication4
+namespace WindowsFormsApplication2
 {
     public partial class Form1 : Form
     {
@@ -19,15 +19,11 @@ namespace WindowsFormsApplication4
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double a = double.Parse(textBox1.Text);
-            double b = double.Parse(textBox2.Text);
-            double c = double.Parse(textBox3.Text);
-            double d = a;
-            for(double i=a;i<=b;i+=c)
-            {
-                d*=i;
-            }
-            label4.Text = d.ToString();
+            double w = double.Parse(textBox1.Text);
+            double h = double.Parse(textBox2.Text);
+            h = h /100;
+            double b = w / (h * h);
+            label3.Text = b.ToString();
         }
     }
 }
